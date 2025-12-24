@@ -8,7 +8,7 @@ const CardList = ({ title }: { title: string }) => {
   const list =
     title === "Popular Content" ? popularContent : latestTransactions;
   return (
-    <div className="">
+    <div>
       <div className="text-lg font-medium mb-6">{title}</div>
       <div className="flex flex-col gap-2">
         {list.map((item) => (
