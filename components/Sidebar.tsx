@@ -9,7 +9,6 @@ import {
   LogOut,
   Plus,
   Projector,
-  Search,
   Settings,
   User2,
 } from "lucide-react";
@@ -61,9 +60,9 @@ const items = [
   },
 
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "Payments",
+    url: "/payments",
+    icon: Banknote,
   },
 
   {
@@ -125,10 +124,10 @@ const AppSidebar = () => {
                 const MenuItem = (
                   <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton asChild>
-                      <a href={item.url} className="flex items-center gap-2">
+                      <Link href={item.url} className="flex items-center gap-2">
                         <item.icon />
                         <span>{item.title}</span>
-                      </a>
+                      </Link>
                     </SidebarMenuButton>
 
                     {item.title === "Inbox" && (
@@ -211,6 +210,7 @@ const AppSidebar = () => {
                 className="w-[--radix-popper-anchor-width]"
               >
                 <DropdownMenuItem>
+                  <User2 />
                   <span>Account</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
