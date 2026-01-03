@@ -99,7 +99,7 @@ const AppSidebar = () => {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
-              <Link href={"/"}>
+              <Link href={"/users/hephzibah"}>
                 <Image
                   src={"/ProfilePics2.png"}
                   alt="profile pics"

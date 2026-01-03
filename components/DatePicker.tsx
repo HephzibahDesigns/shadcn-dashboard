@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ChevronDownIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-// import { Label } from "@/components/ui/label";
 import {
   Popover,
   PopoverContent,
@@ -30,7 +29,7 @@ const DatePicker = () => {
             <ChevronDownIcon />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-auto overflow-hidden p-0" align="start">
+        <PopoverContent className="w-auto overflow-hidden p-0" align="center">
           <Calendar
             mode="single"
             selected={date}
